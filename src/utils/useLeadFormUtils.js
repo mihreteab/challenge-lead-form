@@ -1,6 +1,7 @@
 import ZipCode from '../pages/zipcode'
 import FullNameCapture from '../pages/full-name'
 import WelcomePage from '../pages/welcome'
+import Address from '../pages/address'
 import {
   addNewError,
   moveBackStep,
@@ -23,6 +24,8 @@ export const useLeadFormUtils = () => {
         return <FullNameCapture />
       case 2:
         return <ZipCode />
+      case 3:
+        return <Address />
       default:
     }
   }
